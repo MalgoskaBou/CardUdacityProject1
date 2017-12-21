@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Card-UdacityProject1</string>
+    <string name="from">FROM</string>
+    <string name="team">TEAM</string>
+    <string name="tButton">READ MORE</string>
+    <string name="tButtonCL">CONTRAINT\nLAYOUT</string>
+    <string name="tButtonRLL">RELATIVE\nLINEART</string>
+    <string name="desc">Description</string>
+</resources>

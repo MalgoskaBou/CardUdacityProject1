@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBackground">
+
+    <ImageView
+        android:id="@+id/snow_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/snow_bottom" />
+
+    <ImageView
+        android:id="@+id/snowflakes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/snowflakes" />
+
+    <ImageView
+        android:id="@+id/tadpole"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_padding_C"
+        android:layout_marginStart="@dimen/margin_padding_C"
+        android:layout_marginTop="@dimen/margin_padding_button"
+        android:contentDescription="@string/desc"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tadpole" />
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/from"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tadpole" />
+
+    <ImageView
+        android:id="@+id/tadpole_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/margin_padding_C"
+        android:layout_marginStart="@dimen/margin_padding_C"
+        android:contentDescription="@string/desc"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromText"
+        app:srcCompat="@drawable/tadpole_logo" />
+
+    <TextView
+        android:id="@+id/teamText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/team"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/tadpole_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tadpole_logo" />
+
+    <Button
+        android:id="@+id/myButtonReadMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_color"
+        android:fontFamily="@font/roboto_black"
+        android:paddingEnd="@dimen/margin_padding_button"
+        android:paddingStart="@dimen/margin_padding_button"
+        android:text="@string/tButton"
+        android:textSize="@dimen/text_size_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/myButtonCL"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teamText"
+        tools:text="@string/tButton"
+        android:onClick="goToGame"/>
+
+    <Button
+        android:id="@+id/myButtonCL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/tButtonCL"
+        android:background="@drawable/button_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/myButtonReadMe"
+        app:layout_constraintTop_toBottomOf="@+id/teamText"
+        android:textSize="@dimen/text_size_button"
+        android:paddingLeft="@dimen/margin_padding_button"
+        android:paddingRight="@dimen/margin_padding_button"
+        android:onClick="goToNextLayout"/>
+
+
+</android.support.constraint.ConstraintLayout>

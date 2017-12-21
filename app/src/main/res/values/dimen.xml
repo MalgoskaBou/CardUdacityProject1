@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_padding">28dp</dimen>
+    <dimen name="margin_padding_button">16dp</dimen>
+
+    <dimen name="margin_padding_minus">-28dp</dimen>
+
+    <dimen name="text_size">30sp</dimen>
+    <dimen name="text_size_button">18sp</dimen>
+
+    <dimen name="margin_padding_C">45dp</dimen>
+
+
+
+</resources>

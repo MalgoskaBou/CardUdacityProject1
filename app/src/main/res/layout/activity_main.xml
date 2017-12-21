@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/myBackground"
+    >
+
+    <ImageView
+        android:id="@+id/snow_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/desc"
+        android:scaleType="fitEnd"
+        android:src="@drawable/snow_bottom" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/snowflakes"
+    >
+
+    <ImageView
+        android:id="@+id/tadpole"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/tadpole"
+        android:contentDescription="@string/desc"
+        android:layout_marginTop="@dimen/margin_padding"
+
+        />
+
+    <TextView
+        android:id="@+id/fromText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/from"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size"
+         />
+
+    <ImageView
+        android:src="@drawable/tadpole_logo"
+        android:id = "@+id/tadpole_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/desc"
+        android:layout_marginLeft="@dimen/margin_padding"
+        android:layout_marginRight="@dimen/margin_padding"
+
+
+      />
+
+    <TextView
+        android:id="@+id/teamText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_padding_minus"
+        android:fontFamily="@font/roboto_black"
+        android:text="@string/team"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/myButtonReadMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="@dimen/margin_padding_button"
+        android:layout_marginTop="@dimen/margin_padding_button"
+        android:background="@drawable/button_color"
+        android:fontFamily="@font/roboto_black"
+        android:onClick="goToGame"
+        android:paddingLeft="@dimen/margin_padding_button"
+        android:paddingRight="@dimen/margin_padding_button"
+        android:text="@string/tButton"
+        android:textSize="@dimen/text_size_button"
+         />
+    <Button
+        android:id="@+id/myButtonLRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_padding_button"
+        android:layout_marginBottom="@dimen/margin_padding_button"
+        android:layout_marginTop="@dimen/margin_padding_button"
+        android:background="@drawable/button_color"
+        android:fontFamily="@font/roboto_black"
+        android:onClick="goToNextLayout"
+        android:paddingLeft="@dimen/margin_padding"
+        android:paddingRight="@dimen/margin_padding"
+        android:text="@string/tButtonRLL"
+        android:textSize="@dimen/text_size_button"
+         />
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+</RelativeLayout>
