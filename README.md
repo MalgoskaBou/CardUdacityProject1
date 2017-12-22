@@ -19,10 +19,12 @@ This layout allows you to build more universal and complicated layouts.
 Thanks to that we were able to create a much more complicated layout for our game about tadpoles. In the game, many elements are stacked one above the other. 
 Creating such a layout with a relative and lineart layouts would be much more difficult.
 
+
 once again, I encourage you to learn and I leave a link to the home page of the layout creators - you can learn the basics there: 
 https://constraintlayout.com/
 
 ![image](https://user-images.githubusercontent.com/33101796/34072837-ce529ce2-e28e-11e7-822f-e70d1b60bad7.png)
+*More about the game, you can read here: https://github.com/suwalszczyzna/MadTadpoles*
 
 *Relative/Lineart layout:*
 ![przechwytywanieklinrell](https://user-images.githubusercontent.com/33101796/34307183-10d82dfe-e747-11e7-9161-dd13607e79b4.JPG)
